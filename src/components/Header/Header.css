@@ -1,0 +1,52 @@
+.App-header {
+  height: 100vh;
+
+  background-image: url("https://hyundai.com.ua/sites/all/themes/responsive/images/palisade/b52a5ad8795d841d7638487044846b41.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container {
+  background-color: rgba(0, 0, 0, 0.7);;
+  height: 100vh;
+}
+
+.header-info {
+  width: 400px;
+  padding-top: 300px;
+  padding-left: 300px;
+}
+
+.header-title {
+  margin: 0;
+  
+  color: white;
+  font-size: 62px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-desc {
+  margin-bottom: 50px;
+  margin-top: 35px;
+  font-size: 20px;
+  color: white;
+}
+
+.header-button {
+  margin-top: 35px;
+  padding: 15px 60px;
+
+  border-radius: 50px;
+  background-color: yellow;
+  color: black;
+
+  font-weight: bold;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.header-button:hover {
+  color:white;
+  background-color: rgba(0, 0, 0, 0.7);
+}

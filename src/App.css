@@ -1,0 +1,16 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.App-header {
+  height: 100vh;
+
+  background-image: url("https://hyundai.com.ua/sites/all/themes/responsive/images/palisade/b52a5ad8795d841d7638487044846b41.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container {
+  background-color: rgba(0, 0, 0, 0.7);;
+  height: 100vh;
+}

@@ -1,0 +1,40 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 270px;
+
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+}
+
+.item-image {
+  width: 270px;
+}
+
+.item-title {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.item-desc {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.item-button {
+  padding: 10px 20px;
+
+  background-color: yellow;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.item-button:hover {
+  color:white;
+  background-color: rgba(0, 0, 0, 0.7);
+}

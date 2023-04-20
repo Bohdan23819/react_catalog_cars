@@ -1,0 +1,56 @@
+.about {
+  height: 100vh;
+}
+
+.about-title {
+  margin: auto;
+  width: 300px;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.about-content {
+  margin: auto;
+  display: flex;
+  width: 70vw;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.cont {
+  height: 640px;
+  margin-top: 70px;
+  width: 640px;
+  font-size: 20px;
+  box-shadow: 0px 0px 10px 2px black;
+}
+
+.about-desc {
+  display: flex;
+  align-items: center;
+}
+
+.about-text {
+  padding: 30px;
+}
+
+.about-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-pic {
+  object-fit: cover;
+  margin: 20px;
+  height: 160px;
+  width: 160px;
+  transition: 0.3s;
+}
+
+.about-pic:hover {
+  scale: 1.1;
+}
