@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react_catalog_cars/static/css/main.18cac1f1.css",
+    "main.js": "/react_catalog_cars/static/js/main.d3a0296a.js",
+    "static/js/787.73976bee.chunk.js": "/react_catalog_cars/static/js/787.73976bee.chunk.js",
+    "index.html": "/react_catalog_cars/index.html",
+    "main.18cac1f1.css.map": "/react_catalog_cars/static/css/main.18cac1f1.css.map",
+    "main.d3a0296a.js.map": "/react_catalog_cars/static/js/main.d3a0296a.js.map",
+    "787.73976bee.chunk.js.map": "/react_catalog_cars/static/js/787.73976bee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18cac1f1.css",
+    "static/js/main.d3a0296a.js"
+  ]
+}
