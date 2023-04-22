@@ -3,10 +3,11 @@ interface Order {
   productName: string,
   name: string,
   adress: string,
-  phone: number
+  phone: string
 }
 
 const API_URL = 'https://main--imaginative-brioche-4cc8d5.netlify.app/.netlify/functions/server';
+//const API_URL = 'http://localhost:9000/.netlify/functions/server';
 
 export async function getJournals() {
   const response = await fetch(`${API_URL}/journals`);
@@ -21,7 +22,7 @@ export async function createOrder(data: Order) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      newJournal: data,
+      newOrder: data,
     })
   })
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BooleanLiteral } from "typescript";
+import { createOrder } from "../../api/api";
 import './Cart.css';
 
 interface Order {
@@ -20,10 +21,29 @@ export const Cart: React.FC<Props> = ({setIsCart, cart, setCart}) => {
   const [name, setName] = useState('');
   const [adress, setAdress] = useState('');
   const [phone, setPhone] = useState('');
+  const [isValid, setIsValid] = useState(true);
 
   const removeItem = (index: number) => {
     const arr = cart.filter((item, i) => i !== index);
     setCart(arr);
+  }
+
+  const handleOrder = () => {
+    const validation = !!name.length && !!adress.length && !!phone.length && !!cart.length;
+    setIsValid(validation);
+    
+    if (validation) {
+      const newOrder: Order = {
+        id: Math.ceil(Number(new Date())/1000),
+        productName: cart.join(', '),
+        name,
+        adress,
+        phone
+      }
+
+      createOrder(newOrder);
+    }
+
   }
 
   return (
@@ -37,7 +57,7 @@ export const Cart: React.FC<Props> = ({setIsCart, cart, setCart}) => {
 
         <div className="content-container">
           <div className="ordered">
-            <h2 className="ordered-title">Корзина</h2>
+            <h2 className={`ordered-title ${!isValid && 'error-title'}`}>Корзина</h2>
             {cart.length ? (
                 <ul className="order-list">
                   {cart.map((item, i) => (
@@ -53,27 +73,40 @@ export const Cart: React.FC<Props> = ({setIsCart, cart, setCart}) => {
                   ))}
                 </ul>
               ) : (
-                <p>Пусто</p>
+                <p className="empty">Пусто</p>
               )
             }
             
           </div>
           <div className="order-info">
+          <h2 className="ordered-title">Ваші дані</h2>
             <input 
-              className="order-input"
+              className={`order-input ${!isValid && 'error'}`}
               type='text'
               placeholder="Введіть ваше ім'я"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
             />
             <input
-              className="order-input"
+              className={`order-input ${!isValid && 'error'}`}
               type='text'
               placeholder="Введіть адресу"
+              value={adress}
+              onChange={(event) => setAdress(event.target.value)}
             />
             <input
-              className="order-input"
+              className={`order-input ${!isValid && 'error'}`}
               type='text'
               placeholder="Введіть номер телефону"
+              value={phone}
+              onChange={(event) => setPhone(event.target.value)}
             />
+            <a 
+              className="make-order-button"
+              onClick={handleOrder}
+            >
+              Замовити
+            </a>
           </div>
         </div>
       </div>
