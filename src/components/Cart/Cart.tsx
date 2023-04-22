@@ -42,6 +42,10 @@ export const Cart: React.FC<Props> = ({setIsCart, cart, setCart}) => {
       }
 
       createOrder(newOrder);
+      setTimeout(() => {
+        setCart([]);
+        setIsCart(false);
+      }, 1500)
     }
 
   }
