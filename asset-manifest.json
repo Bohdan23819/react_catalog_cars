@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react_catalog_cars/static/css/main.fdd54f43.css",
-    "main.js": "/react_catalog_cars/static/js/main.a88fa62e.js",
+    "main.js": "/react_catalog_cars/static/js/main.8ad661b3.js",
     "static/js/787.73976bee.chunk.js": "/react_catalog_cars/static/js/787.73976bee.chunk.js",
     "index.html": "/react_catalog_cars/index.html",
     "main.fdd54f43.css.map": "/react_catalog_cars/static/css/main.fdd54f43.css.map",
-    "main.a88fa62e.js.map": "/react_catalog_cars/static/js/main.a88fa62e.js.map",
+    "main.8ad661b3.js.map": "/react_catalog_cars/static/js/main.8ad661b3.js.map",
     "787.73976bee.chunk.js.map": "/react_catalog_cars/static/js/787.73976bee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fdd54f43.css",
-    "static/js/main.a88fa62e.js"
+    "static/js/main.8ad661b3.js"
   ]
 }
